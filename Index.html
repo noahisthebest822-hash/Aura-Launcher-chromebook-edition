@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Runner</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0/loader.js"></script>
+</head>
+<body>
+    <script>
+        async function runJava() {
+            // Initializes the Java Environment
+            await cheerpjInit();
+            // Creates a 800x600 window for your app
+            cheerpjCreateDisplay(800, 600);
+            // RUNS YOUR JAR FILE
+            // Note: "/app/" refers to the folder this HTML file is in
+            cheerpjRunJar("/app/Aura-Launcher-WORKING-BACKUP.jar");
+        }
+        runJava();
+    </script>
+</body>
+</html>
